@@ -1,0 +1,184 @@
+<!-- Navbar with Glassmorphism and Margin -->
+<nav class="fixed w-full z-50 top-0 left-0 pt-4 px-4">
+  <div
+    class="glass-header max-w-screen-xl mx-auto backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg rounded-2xl"
+  >
+    <div class="px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assets/logo.png" class="h-10 w-36" />
+        </a>
+
+        <!-- Desktop navigation -->
+        <div class="hidden md:block">
+          <ul class="flex items-center space-x-8">
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarButton"
+                class="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300"
+              >
+                Destinations
+                <svg
+                  class="w-4 h-4 ms-1.5 transition-transform duration-300"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 9-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown Menu with Glassmorphism -->
+              <div
+                id="dropdownNavbar"
+                class="hidden absolute top-full mt-2 backdrop-blur-xl bg-white/80 border border-white/20 rounded-xl shadow-xl py-2 min-w-[200px]"
+              >
+                <ul class="space-y-1 px-2">
+                  <li>
+                    <a
+                      href="#destinations"
+                      class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+                      >Popular Destinations</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#regions"
+                      class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+                      >By Region</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#all-countries"
+                      class="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+                      >All Countries</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#plans"
+                class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300"
+                >Plans</a
+              >
+            </li>
+            <li>
+              <a
+                href="#how-it-works"
+                class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300"
+                >How It Works</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300"
+                >Help</a
+              >
+            </li>
+            <li>
+              <a
+                href="#plans"
+                class="ml-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white px-6 py-2.5 rounded-xl font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                Get eSIM
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-white/50 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all duration-300"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="hidden md:hidden" id="navbar-dropdown">
+        <ul class="py-4 space-y-2">
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#destinations"
+              class="block py-2 px-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+              >Destinations</a
+            >
+          </li>
+          <li>
+            <a
+              href="#plans"
+              class="block py-2 px-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+              >Plans</a
+            >
+          </li>
+          <li>
+            <a
+              href="#how-it-works"
+              class="block py-2 px-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+              >How It Works</a
+            >
+          </li>
+          <li>
+            <a
+              href="#faq"
+              class="block py-2 px-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-lg transition-all duration-300"
+              >Help</a
+            >
+          </li>
+          <li>
+            <a
+              href="#plans"
+              class="block mx-4 my-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 py-2.5 rounded-xl font-semibold text-center hover:shadow-lg transition-all duration-300"
+              >Get eSIM</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

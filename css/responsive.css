@@ -1,0 +1,204 @@
+/* ====== RESPONSIVE BREAKPOINTS ====== */
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Large Devices (992px to 1199px) */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Medium Devices (768px to 991px) */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  section {
+    padding: var(--space-lg) 0;
+  }
+}
+
+/* Small Devices (576px to 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    padding: 0 var(--space-sm);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn-large {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: var(--space-md);
+  }
+}
+
+/* Extra Small Devices (575px and below) */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 var(--space-sm);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  section {
+    padding: var(--space-md) 0;
+  }
+
+  .btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* ====== GRID SYSTEM ====== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-4 {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* Responsive Columns */
+@media (max-width: 768px) {
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* ====== NAVBAR RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+  }
+}
+
+/* ====== HERO SECTION RESPONSIVE ====== */
+@media (max-width: 992px) {
+  .hero-content {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+  }
+
+  .hero-image {
+    order: -1;
+    margin-bottom: var(--space-lg);
+  }
+}
+
+/* ====== PLANS SECTION RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .plan-cards {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .plan-card {
+    width: 100%;
+  }
+}
+
+/* ====== FOOTER RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+}

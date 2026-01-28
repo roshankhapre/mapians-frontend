@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const components = [
     { id: "navbar-container", file: "components/navbar.html" },
     { id: "hero-container", file: "components/hero.html" },
-    { id: "what-is-esim", file: "components/what-is-esim.html" },
     { id: "destinations", file: "components/destinations.html" },
+    { id: "what-is-esim", file: "components/what-is-esim.html" },
+
     { id: "how-it-works-container", file: "components/how-it-works.html" },
 
-   
     { id: "plans-container", file: "components/plans.html" },
     { id: "achievements", file: "components/achievements.html" },
     // { id: "connection", file: "components/connection.html" },

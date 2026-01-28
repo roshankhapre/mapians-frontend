@@ -1,712 +1,393 @@
-<!-- Premium Hero Section with Carousel -->
+<!-- Hero Section with Side-by-Side Layout (Enhanced) -->
 <section
-  class="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden"
+  class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden"
 >
-  <!-- Ambient Background -->
-  <div class="absolute inset-0 pointer-events-none">
-    <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-blue-50/10 to-transparent"
-    ></div>
-    <div
-      class="absolute top-1/4 -left-24 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"
-    ></div>
-    <div
-      class="absolute bottom-1/4 -right-24 w-96 h-96 bg-indigo-200/10 rounded-full blur-3xl"
-    ></div>
-  </div>
-
+  <!-- Floating Background Elements -->
   <div
-    class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 md:pt-32 md:pb-24"
-  >
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-      <!-- LEFT CONTENT -->
-      <div class="relative z-20">
-        <!-- Premium Tag -->
-        <div class="inline-flex items-center mb-8">
-          <div
-            class="flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full px-4 py-2.5 border border-blue-100 shadow-sm"
+    class="absolute top-0 left-0 w-96 h-96 bg-blue-400/20 rounded-full mix-blend-multiply filter blur-3xl animate-float"
+  ></div>
+  <div
+    class="absolute top-20 right-0 w-80 h-80 bg-purple-400/15 rounded-full mix-blend-multiply filter blur-3xl animate-float-delayed"
+  ></div>
+  <div
+    class="absolute bottom-0 left-1/2 w-72 h-72 bg-pink-400/15 rounded-full mix-blend-multiply filter blur-3xl animate-float-slow"
+  ></div>
+
+  <!-- Decorative Circles -->
+  <div
+    class="absolute top-32 left-20 w-32 h-32 border-4 border-blue-200/30 rounded-full"
+  ></div>
+  <div
+    class="absolute top-1/2 right-10 w-40 h-40 border-4 border-purple-200/30 rounded-full"
+  ></div>
+  <div
+    class="absolute bottom-20 left-1/4 w-28 h-28 border-4 border-pink-200/30 rounded-full"
+  ></div>
+
+  <!-- Decorative Lines -->
+  <div
+    class="absolute top-0 left-1/3 w-px h-40 bg-gradient-to-b from-transparent via-blue-200 to-transparent"
+  ></div>
+  <div
+    class="absolute bottom-0 right-1/4 w-px h-32 bg-gradient-to-t from-transparent via-purple-200 to-transparent"
+  ></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center py-12">
+      <!-- Left Column - Text -->
+      <div data-aos="fade-right" data-aos-duration="800">
+        <div
+          class="inline-block mb-4"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <span
+            class="px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold"
           >
-            <div
-              class="w-2 h-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full animate-pulse"
-            ></div>
-            <span class="text-sm font-semibold text-gray-700"
-              >🌍 190+ Countries Covered</span
-            >
-          </div>
+            🌍 190+ Countries Covered
+          </span>
         </div>
 
-        <!-- Elegant Heading -->
         <h1
-          class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight"
+          class="mb-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-6xl leading-tight"
         >
-          Global eSIM
+          Global
           <span
-            class="block mt-3 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-600 bg-clip-text text-transparent"
+            class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+            >eSIM Data Plans</span
           >
-            Made for Travelers
-          </span>
+          for International Travel
         </h1>
 
-        <!-- Clean Description -->
-        <p class="mt-6 text-lg text-gray-600 max-w-xl leading-relaxed">
-          Experience instant global connectivity with our premium eSIM. Save up
-          to 80% on roaming fees, activate in 2 minutes, and enjoy high-speed 5G
-          in 190+ countries.
+        <p class="mb-8 text-lg text-gray-600 lg:text-xl leading-relaxed">
+          Stay connected in 190+ countries. No roaming fees. Instant activation
+          on iPhone and Android devices.
         </p>
 
-        <!-- Elegant Search -->
-        <div class="mt-10">
-          <div class="relative max-w-lg group">
+        <!-- Enhanced Search Bar -->
+        <div
+          class="mb-8"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <div class="relative group">
             <div
-              class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"
+              class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"
             ></div>
             <div
-              class="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
+              class="relative flex items-center bg-white rounded-2xl shadow-xl p-2 border border-gray-100"
             >
-              <div class="flex items-center px-6">
-                <div class="flex-shrink-0 mr-4">
-                  <div
-                    class="w-10 h-10 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl flex items-center justify-center"
-                  >
-                    <i class="fas fa-map-marker-alt text-blue-600"></i>
-                  </div>
-                </div>
+              <div class="flex-1 flex items-center px-4">
+                <svg
+                  class="w-5 h-5 text-gray-400 mr-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
                 <input
                   type="text"
-                  placeholder="Search for destination..."
-                  class="flex-1 py-5 bg-transparent text-gray-800 placeholder-gray-400 focus:outline-none text-base"
-                  id="destinationInput"
+                  placeholder="Where are you traveling to?"
+                  class="w-full py-4 bg-transparent text-gray-800 placeholder-gray-400 focus:outline-none text-base"
                 />
-                <button
-                  class="ml-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
-                  id="searchButton"
-                >
-                  Search
-                </button>
               </div>
+              <button
+                class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 text-white"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Search
+              </button>
             </div>
-          </div>
-        </div>
-
-        <!-- Quick Features -->
-        <div class="mt-8 flex flex-wrap gap-4">
-          <div
-            class="flex items-center px-4 py-2.5 bg-blue-50/50 rounded-lg border border-blue-100"
-          >
-            <i class="fas fa-bolt text-blue-600 mr-2"></i>
-            <span class="text-sm font-medium text-gray-700"
-              >Instant Activation</span
-            >
-          </div>
-          <div
-            class="flex items-center px-4 py-2.5 bg-green-50/50 rounded-lg border border-green-100"
-          >
-            <i class="fas fa-wallet text-green-600 mr-2"></i>
-            <span class="text-sm font-medium text-gray-700"
-              >Save 80% vs Roaming</span
-            >
-          </div>
-          <div
-            class="flex items-center px-4 py-2.5 bg-purple-50/50 rounded-lg border border-purple-100"
-          >
-            <i class="fas fa-shield-alt text-purple-600 mr-2"></i>
-            <span class="text-sm font-medium text-gray-700"
-              >Secure Connection</span
-            >
           </div>
         </div>
 
         <!-- CTA Buttons -->
-        <div class="mt-12 flex flex-col sm:flex-row gap-4">
-          <button
-            class="group px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+        <div
+          class="flex flex-col mb-8 sm:flex-row sm:justify-start sm:space-x-4 space-y-4 sm:space-y-0"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <a
+            href="#plans"
+            class="group inline-flex justify-center items-center py-4 px-8 text-base font-semibold text-center text-white rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-300 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
-            <span class="flex items-center justify-center">
-              <i class="fas fa-sim-card mr-3"></i>
-              Get Your eSIM
-              <i
-                class="fas fa-arrow-right ml-3 group-hover:translate-x-2 transition-transform duration-300"
-              ></i>
-            </span>
-          </button>
-          <button
-            class="px-8 py-4 bg-white text-gray-700 font-semibold rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 shadow-sm hover:shadow"
+            Get Your eSIM
+            <svg
+              class="ml-2 -mr-1 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#how-it-works"
+            class="group inline-flex justify-center items-center py-4 px-8 text-base font-semibold text-center text-gray-700 rounded-xl border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 focus:ring-4 focus:ring-gray-200 transition-all duration-300 bg-white shadow-md hover:shadow-lg"
           >
-            <span class="flex items-center justify-center">
-              <i class="fas fa-play-circle mr-3 text-blue-600"></i>
-              Watch Demo
-            </span>
-          </button>
+            <svg
+              class="mr-2 -ml-1 w-5 h-5 text-blue-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+              ></path>
+            </svg>
+            How it works
+          </a>
         </div>
 
-        <!-- Trust Stats -->
-        <div class="mt-14 pt-10 border-t border-gray-200">
-          <div class="grid grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="text-3xl font-bold text-gray-900">190+</div>
-              <div class="text-sm text-gray-600 mt-1">Countries</div>
-            </div>
-            <div class="text-center">
-              <div class="text-3xl font-bold text-gray-900">50K+</div>
-              <div class="text-sm text-gray-600 mt-1">Happy Travelers</div>
-            </div>
-            <div class="text-center">
-              <div class="text-3xl font-bold text-gray-900">4.9★</div>
-              <div class="text-sm text-gray-600 mt-1">Rating</div>
-            </div>
+        <!-- Trust Indicators -->
+        <div
+          class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
+          <div class="text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">190+</div>
+            <div class="text-sm text-gray-600">Countries</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">1M+</div>
+            <div class="text-sm text-gray-600">Happy Users</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">99.9%</div>
+            <div class="text-sm text-gray-600">Success Rate</div>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT CONTENT - Premium Carousel -->
-      <div class="relative">
-        <!-- Carousel Container -->
-        <div class="relative w-full max-w-lg mx-auto">
-          <!-- Carousel Window -->
+      <!-- Right Column - Banner Image -->
+      <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+        <!-- Decorative Elements behind image -->
+        <div
+          class="absolute -top-8 -right-8 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-8 -left-8 w-64 h-64 bg-purple-200/30 rounded-full blur-3xl"
+        ></div>
+
+        <!-- Image Container with effects -->
+        <div
+          class="relative hero-image-container rounded-3xl overflow-hidden  backdrop-blur-sm shadow-2xl"
+        >
+          <!-- Gradient overlay to enhance the image -->
           <div
-            class="relative overflow-hidden rounded-3xl shadow-2xl border-8 border-white"
-          >
-            <!-- Carousel Track -->
+            class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 mix-blend-multiply z-20"
+          ></div>
+          <!-- Subtle vignette effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10"
+          ></div>
+
+          <!-- Client's specified image -->
+          <img
+            src="/assets/hero-img.jpg"
+            alt="Group of good friends having fun while sitting by the side of the road in an autumn forest"
+            class="relative z-0 w-full h-[600px] object-cover"
+          />
+
+          <!-- Floating eSIM overlay element -->
+          <div class="absolute top-8 right-8 z-30">
             <div
-              class="carousel-track flex transition-transform duration-500 ease-out"
-              id="carouselTrack"
+              class=" "
             >
-              <!-- Slide 1 -->
-              <div class="carousel-slide w-full flex-shrink-0">
-                <div class="relative h-[480px] overflow-hidden">
-                  <img
-                    src="/assets/hero1.webp"
-                    alt="Traveler using eSIM in Tokyo"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
-                  ></div>
-                  <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <h3 class="text-xl font-bold">Tokyo, Japan</h3>
-                        <p class="text-blue-100">5G • From $4.99/week</p>
-                      </div>
-                      <div
-                        class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center"
-                      >
-                        <i class="fas fa-wifi"></i>
-                      </div>
-                    </div>
-                  </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center"
+                >
+                  <i class="fas fa-wifi text-white text-xl"></i>
                 </div>
-              </div>
-
-              <!-- Slide 2 -->
-              <div class="carousel-slide w-full flex-shrink-0">
-                <div class="relative h-[480px] overflow-hidden">
-                  <img
-                    src="/assets/hero2.webp"
-                    alt="Traveler in Paris"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
-                  ></div>
-                  <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <h3 class="text-xl font-bold">Paris, France</h3>
-                        <p class="text-blue-100">5G • From $3.99/week</p>
-                      </div>
-                      <div
-                        class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center"
-                      >
-                        <i class="fas fa-wifi"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 3 -->
-              <div class="carousel-slide w-full flex-shrink-0">
-                <div class="relative h-[480px] overflow-hidden">
-                  <img
-                    src="/assets/hero3.webp"
-                    alt="Traveler in Bali"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
-                  ></div>
-                  <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <h3 class="text-xl font-bold">Bali, Indonesia</h3>
-                        <p class="text-blue-100">5G • From $2.99/week</p>
-                      </div>
-                      <div
-                        class="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center"
-                      >
-                        <i class="fas fa-wifi"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 4 -->
-              <div class="carousel-slide w-full flex-shrink-0">
-                <div class="relative h-[480px] overflow-hidden">
-                  <img
-                    src="/assets/hero4.webp"
-                    alt="Traveler in New York"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
-                  ></div>
-                  <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <h3 class="text-xl font-bold">New York, USA</h3>
-                        <p class="text-blue-100">5G • From $5.99/week</p>
-                      </div>
-                      <div
-                        class="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center"
-                      >
-                        <i class="fas fa-wifi"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
-
-          <!-- Carousel Controls -->
-          <div class="absolute top-1/2 left-4 transform -translate-y-1/2">
-            <button
-              class="carousel-prev w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-110"
-            >
-              <i class="fas fa-chevron-left text-gray-700"></i>
-            </button>
-          </div>
-          <div class="absolute top-1/2 right-4 transform -translate-y-1/2">
-            <button
-              class="carousel-next w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-110"
-            >
-              <i class="fas fa-chevron-right text-gray-700"></i>
-            </button>
-          </div>
-
-          <!-- Carousel Indicators -->
-          <div class="flex justify-center mt-8 space-x-3">
-            <button
-              class="carousel-indicator w-3 h-3 bg-gray-300 rounded-full transition-all duration-300 hover:scale-125"
-              data-slide="0"
-            ></button>
-            <button
-              class="carousel-indicator w-3 h-3 bg-gray-300 rounded-full transition-all duration-300 hover:scale-125"
-              data-slide="1"
-            ></button>
-            <button
-              class="carousel-indicator w-3 h-3 bg-gray-300 rounded-full transition-all duration-300 hover:scale-125"
-              data-slide="2"
-            ></button>
-            <button
-              class="carousel-indicator w-3 h-3 bg-gray-300 rounded-full transition-all duration-300 hover:scale-125"
-              data-slide="3"
-            ></button>
-          </div>
         </div>
 
-        <!-- Floating Stats Card -->
+        <!-- Floating Badge - Bottom Left -->
         <div
-          class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-2xl border border-gray-100 animate-float"
+          class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-4 border border-gray-100"
+          data-aos="zoom-in"
+          data-aos-delay="600"
         >
-          <div class="flex items-center">
+          <div class="flex items-center gap-3">
             <div
-              class="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4"
+              class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center"
             >
-              <i class="fas fa-bolt text-white text-xl"></i>
+          
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
             </div>
             <div>
-              <p class="font-bold text-gray-900 text-lg">Instant</p>
-              <p class="text-sm text-gray-600">2-min activation</p>
+              <div class="font-bold text-gray-900">Instant Setup</div>
+              <div class="text-sm text-gray-600">Activate in seconds</div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Scroll Indicator -->
-  <div
-    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden lg:block"
-  >
-    <div class="text-center animate-bounce">
-      <div class="text-sm text-gray-500 mb-2">Explore Plans</div>
-      <i class="fas fa-chevron-down text-gray-400"></i>
+        <!-- Rating Badge - Top Right -->
+        <div
+          class="absolute -top-6 -right-6 bg-white rounded-2xl shadow-2xl p-4 border border-gray-100"
+          data-aos="zoom-in"
+          data-aos-delay="700"
+        >
+          <div class="flex items-center gap-2 mb-1">
+            <svg
+              class="w-5 h-5 text-yellow-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              ></path>
+            </svg>
+            <span class="font-bold text-gray-900">4.9/5</span>
+          </div>
+          <div class="text-xs text-gray-600">Rated by 10k+ users</div>
+        </div>
+
+        <!-- Additional Badge - Middle Left -->
+        <div
+          class="absolute left-8 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl shadow-2xl p-4"
+          data-aos="zoom-in"
+          data-aos-delay="800"
+        >
+          <div class="text-center">
+            <div class="text-xl font-bold">Save 70%</div>
+            <div class="text-xs opacity-90">vs Roaming</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Trust Section -->
-<div class="bg-gradient-to-r from-gray-50 to-blue-50/30 py-8">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="text-center p-4">
-        <div class="text-sm text-gray-600 mb-2">Activation Time</div>
-        <div class="text-xl font-bold text-gray-900">&lt; 2 minutes</div>
-      </div>
-      <div class="text-center p-4">
-        <div class="text-sm text-gray-600 mb-2">Customer Support</div>
-        <div class="text-xl font-bold text-gray-900">24/7 Live Chat</div>
-      </div>
-      <div class="text-center p-4">
-        <div class="text-sm text-gray-600 mb-2">Success Rate</div>
-        <div class="text-xl font-bold text-gray-900">99.9%</div>
-      </div>
-      <div class="text-center p-4">
-        <div class="text-sm text-gray-600 mb-2">User Rating</div>
-        <div class="text-xl font-bold text-gray-900">4.9/5 ★</div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <style>
-  /* Smooth animations */
+  /* Animations for floating elements */
   @keyframes float {
     0%,
     100% {
-      transform: translateY(0);
+      transform: translateY(0) translateX(0);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-20px) translateX(10px);
     }
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes shake {
+  @keyframes float-delayed {
     0%,
     100% {
-      transform: translateX(0);
+      transform: translateY(0) translateX(0);
     }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-      transform: translateX(-5px);
+    50% {
+      transform: translateY(20px) translateX(-10px);
     }
-    20%,
-    40%,
-    60%,
-    80% {
-      transform: translateX(5px);
+  }
+
+  @keyframes float-slow {
+    0%,
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(10px) translateX(5px);
     }
   }
 
   .animate-float {
-    animation: float 3s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
   }
 
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease forwards;
+  .animate-float-delayed {
+    animation: float-delayed 10s ease-in-out infinite;
   }
 
-  .animate-shake {
-    animation: shake 0.5s ease-in-out;
+  .animate-float-slow {
+    animation: float-slow 12s ease-in-out infinite;
   }
 
-  /* Carousel styling */
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Hover effect for the image container */
+  .hero-image-container {
+    transition:
+      transform 0.5s ease,
+      box-shadow 0.5s ease;
   }
 
-  .carousel-slide {
-    flex: 0 0 100%;
-    transition: transform 0.5s ease;
+  .hero-image-container:hover {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) scale(1.02);
+    box-shadow: 0 30px 60px rgba(59, 130, 246, 0.25);
   }
 
-  .carousel-indicator {
-    transition: all 0.3s ease;
+  /* Image styling */
+  .hero-image-container img {
+    transition: transform 0.8s ease;
   }
 
-  .carousel-indicator.active {
-    width: 24px !important;
-    background: linear-gradient(to right, #3b82f6, #6366f1) !important;
-  }
-
-  /* Hover effects */
-  button:hover {
-    transform: translateY(-1px);
-  }
-
-  /* Image hover effect */
-  .carousel-slide:hover img {
+  .hero-image-container:hover img {
     transform: scale(1.05);
-    transition: transform 0.5s ease;
-  }
-
-  /* Gradient text animation */
-  .gradient-text {
-    background-size: 200% 200%;
-    animation: gradient 3s ease infinite;
-  }
-
-  @keyframes gradient {
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-  }
-
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #f1f5f9;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #3b82f6, #6366f1);
-    border-radius: 4px;
   }
 </style>
 
 <script>
+  // Add interactive effects for the hero image
   document.addEventListener("DOMContentLoaded", function () {
-    // Carousel functionality
-    const carouselTrack = document.getElementById("carouselTrack");
-    const slides = document.querySelectorAll(".carousel-slide");
-    const indicators = document.querySelectorAll(".carousel-indicator");
-    const prevBtn = document.querySelector(".carousel-prev");
-    const nextBtn = document.querySelector(".carousel-next");
+    const heroImageContainer = document.querySelector(".hero-image-container");
 
-    let currentSlide = 0;
-    const totalSlides = slides.length;
-    let autoSlideInterval;
-    let isTransitioning = false;
+    if (heroImageContainer) {
+      // Parallax effect on mouse move
+      heroImageContainer.addEventListener("mousemove", (e) => {
+        const rect = heroImageContainer.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
 
-    // Initialize carousel
-    function initCarousel() {
-      // Set initial width for carousel track
-      carouselTrack.style.width = `${totalSlides * 100}%`;
+        const moveX = (x - 50) * 0.1;
+        const moveY = (y - 50) * 0.1;
 
-      // Initialize each slide width
-      slides.forEach((slide) => {
-        slide.style.width = `${100 / totalSlides}%`;
+        heroImageContainer.style.transform = `perspective(1000px) rotateY(${moveX}deg) rotateX(${-moveY}deg) scale(1.02)`;
       });
 
-      updateCarousel();
-      startAutoSlide();
-    }
-
-    // Update carousel position
-    function updateCarousel() {
-      if (isTransitioning) return;
-
-      isTransitioning = true;
-
-      // Calculate the percentage to move
-      const percentage = -currentSlide * 100;
-      carouselTrack.style.transform = `translateX(${percentage}%)`;
-
-      // Update indicators
-      indicators.forEach((indicator, index) => {
-        indicator.classList.remove("active");
-        indicator.classList.remove("w-6");
-        indicator.classList.add("w-3", "bg-gray-300");
-
-        if (index === currentSlide) {
-          indicator.classList.add(
-            "active",
-            "w-6",
-            "bg-gradient-to-r",
-            "from-blue-600",
-            "to-indigo-600",
-          );
-          indicator.classList.remove("w-3", "bg-gray-300");
-        }
-      });
-
-      // Reset transition flag after animation
-      setTimeout(() => {
-        isTransitioning = false;
-      }, 500);
-    }
-
-    // Go to specific slide
-    function goToSlide(index) {
-      if (isTransitioning) return;
-
-      currentSlide = index;
-      if (currentSlide >= totalSlides) currentSlide = 0;
-      if (currentSlide < 0) currentSlide = totalSlides - 1;
-
-      updateCarousel();
-      resetAutoSlide();
-    }
-
-    // Next slide
-    function nextSlide() {
-      if (isTransitioning) return;
-
-      currentSlide++;
-      if (currentSlide >= totalSlides) currentSlide = 0;
-      goToSlide(currentSlide);
-    }
-
-    // Previous slide
-    function prevSlide() {
-      if (isTransitioning) return;
-
-      currentSlide--;
-      if (currentSlide < 0) currentSlide = totalSlides - 1;
-      goToSlide(currentSlide);
-    }
-
-    // Auto slide
-    function startAutoSlide() {
-      if (autoSlideInterval) clearInterval(autoSlideInterval);
-      autoSlideInterval = setInterval(nextSlide, 5000);
-    }
-
-    function resetAutoSlide() {
-      if (autoSlideInterval) clearInterval(autoSlideInterval);
-      startAutoSlide();
-    }
-
-    // Event listeners for carousel
-    prevBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      prevSlide();
-      resetAutoSlide();
-    });
-
-    nextBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      nextSlide();
-      resetAutoSlide();
-    });
-
-    indicators.forEach((indicator, index) => {
-      indicator.addEventListener("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        goToSlide(index);
-        resetAutoSlide();
-      });
-    });
-
-    // Pause auto slide on hover
-    const carouselContainer = document.querySelector(
-      ".relative.overflow-hidden",
-    );
-
-    if (carouselContainer) {
-      carouselContainer.addEventListener("mouseenter", () => {
-        if (autoSlideInterval) clearInterval(autoSlideInterval);
-      });
-
-      carouselContainer.addEventListener("mouseleave", () => {
-        startAutoSlide();
+      heroImageContainer.addEventListener("mouseleave", () => {
+        heroImageContainer.style.transform =
+          "perspective(1000px) rotateY(0) rotateX(0) scale(1)";
       });
     }
-
-    // Initialize carousel on load and after resize
-    initCarousel();
-
-    // Re-initialize on resize
-    let resizeTimer;
-    window.addEventListener("resize", function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function () {
-        initCarousel();
-      }, 250);
-    });
-
-    // Search functionality
-    const searchButton = document.getElementById("searchButton");
-    const destinationInput = document.getElementById("destinationInput");
-
-    if (searchButton && destinationInput) {
-      searchButton.addEventListener("click", function () {
-        const destination = destinationInput.value.trim();
-
-        if (!destination) {
-          // Add shake animation
-          destinationInput.style.border = "2px solid #ef4444";
-          destinationInput.classList.add("animate-shake");
-          destinationInput.placeholder = "Please enter a destination";
-
-          setTimeout(() => {
-            destinationInput.style.border = "";
-            destinationInput.classList.remove("animate-shake");
-            destinationInput.placeholder = "Search for destination...";
-          }, 2000);
-
-          return;
-        }
-
-        // Show loading state
-        const originalHTML = searchButton.innerHTML;
-        searchButton.innerHTML =
-          '<i class="fas fa-spinner fa-spin mr-2"></i> Searching...';
-        searchButton.disabled = true;
-
-        // Simulate search
-        setTimeout(() => {
-          alert(
-            `🎉 Found perfect eSIM plans for ${destination}!\n\n✅ 5G Coverage Available\n✅ From $4.99/week\n✅ Instant Activation\n\nRedirecting to plans page...`,
-          );
-
-          // Reset button
-          searchButton.innerHTML = originalHTML;
-          searchButton.disabled = false;
-        }, 1500);
-      });
-
-      // Enter key support
-      destinationInput.addEventListener("keypress", function (e) {
-        if (e.key === "Enter") {
-          searchButton.click();
-        }
-      });
-    }
-
-    // Button hover animations
-    document.querySelectorAll('button[class*="bg-gradient"]').forEach((btn) => {
-      btn.addEventListener("mouseenter", function () {
-        this.style.transform = "translateY(-2px) scale(1.02)";
-      });
-
-      btn.addEventListener("mouseleave", function () {
-        this.style.transform = "translateY(0) scale(1)";
-      });
-    });
   });
 </script>

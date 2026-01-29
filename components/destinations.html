@@ -182,6 +182,8 @@
       id="destinations-grid"
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
     >
+      <!-- ========== LOCAL ESIMS ========== -->
+
       <!-- USA - Local -->
       <div
         class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2"
@@ -327,10 +329,62 @@
         </div>
       </div>
 
-      <!-- Europe Regional - Regional -->
+      <!-- France - Local -->
+      <div
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="local"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            alt="Paris, France"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+          ></div>
+          <div class="absolute top-4 left-4">
+            <img
+              src="https://flagcdn.com/w40/fr.png"
+              alt="France Flag"
+              class="w-10 h-10 rounded-full shadow-lg border-2 border-white"
+            />
+          </div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-bold">France</h3>
+            <p class="text-sm text-blue-100">From $3.99/week</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5">
+          <div class="flex justify-between items-center mb-3">
+            <div class="text-sm text-gray-600">Coverage</div>
+            <div
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold"
+            >
+              5G/LTE
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <div>
+              <div class="font-medium text-gray-900">5GB Data</div>
+              <div class="text-gray-500">7 Days</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-lg text-blue-600">$15.99</div>
+              <div class="text-xs text-gray-500">per month</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== REGIONAL ESIMS ========== -->
+
+      <!-- Europe Regional -->
       <div
         class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
         data-category="regional"
+        data-region="europe"
       >
         <div class="relative h-48 overflow-hidden">
           <img
@@ -359,7 +413,7 @@
             </div>
           </div>
           <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">Europe</h3>
+            <h3 class="text-xl font-bold">Europe Regional</h3>
             <p class="text-sm text-blue-100">26 countries • From $29.99</p>
           </div>
         </div>
@@ -386,10 +440,11 @@
         </div>
       </div>
 
-      <!-- Asia Pacific - Regional -->
+      <!-- Asia Pacific Regional -->
       <div
         class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
         data-category="regional"
+        data-region="asia-pacific"
       >
         <div class="relative h-48 overflow-hidden">
           <img
@@ -445,15 +500,16 @@
         </div>
       </div>
 
-      <!-- Middle East - Regional -->
+      <!-- Middle East & Africa -->
       <div
         class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
         data-category="regional"
+        data-region="middle-east-africa"
       >
         <div class="relative h-48 overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-            alt="Middle East"
+            alt="Middle East & Africa"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           <div
@@ -477,8 +533,8 @@
             </div>
           </div>
           <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">Middle East</h3>
-            <p class="text-sm text-blue-100">12 countries • From $25.99</p>
+            <h3 class="text-xl font-bold">Middle East & Africa</h3>
+            <p class="text-sm text-blue-100">18 countries • From $25.99</p>
           </div>
         </div>
 
@@ -488,7 +544,7 @@
             <div
               class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold"
             >
-              12 Countries
+              18 Countries
             </div>
           </div>
           <div class="flex justify-between items-center text-sm">
@@ -504,10 +560,73 @@
         </div>
       </div>
 
-      <!-- Global 80+ - Global -->
+      <!-- North America Regional -->
+      <div
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="regional"
+        data-region="north-america"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            alt="North America"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+          ></div>
+          <div class="absolute top-4 left-4">
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-red-600 to-red-800 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-bold">North America</h3>
+            <p class="text-sm text-blue-100">3 countries • From $39.99</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5">
+          <div class="flex justify-between items-center mb-3">
+            <div class="text-sm text-gray-600">Coverage</div>
+            <div
+              class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold"
+            >
+              USA, Canada, Mexico
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <div>
+              <div class="font-medium text-gray-900">Unlimited Data</div>
+              <div class="text-gray-500">30 Days</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-lg text-blue-600">$59.99</div>
+              <div class="text-xs text-gray-500">regional plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== GLOBAL ESIMS ========== -->
+
+      <!-- Global 80+ Countries -->
       <div
         class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
         data-category="global"
+        data-plan="global-80"
       >
         <div class="relative h-48 overflow-hidden">
           <img
@@ -564,10 +683,11 @@
         </div>
       </div>
 
-      <!-- Global 190+ - Global -->
+      <!-- Global 190+ Premium -->
       <div
         class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
         data-category="global"
+        data-plan="global-190"
       >
         <div class="relative h-48 overflow-hidden">
           <img
@@ -596,7 +716,7 @@
             </div>
           </div>
           <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">Global 190+</h3>
+            <h3 class="text-xl font-bold">Global 190+ Premium</h3>
             <p class="text-sm text-blue-100">190+ countries • Premium</p>
           </div>
         </div>
@@ -618,6 +738,129 @@
             <div class="text-right">
               <div class="font-bold text-lg text-blue-600">$129.99</div>
               <div class="text-xs text-gray-500">premium global</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Global Business Plan -->
+      <div
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="global"
+        data-plan="global-business"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Global Business"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+          ></div>
+          <div class="absolute top-4 left-4">
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm12 8a4 4 0 00-4 4v1H8v-1a4 4 0 00-4-4V8h12v4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-bold">Global Business</h3>
+            <p class="text-sm text-blue-100">190+ countries • Business</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5">
+          <div class="flex justify-between items-center mb-3">
+            <div class="text-sm text-gray-600">Coverage</div>
+            <div
+              class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-semibold"
+            >
+              Business Priority
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <div>
+              <div class="font-medium text-gray-900">Unlimited Data</div>
+              <div class="text-gray-500">90 Days</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-lg text-blue-600">$299.99</div>
+              <div class="text-xs text-gray-500">business plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Global Traveler Plus -->
+      <div
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="global"
+        data-plan="global-traveler-plus"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Global Traveler"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+          ></div>
+          <div class="absolute top-4 left-4">
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-teal-600 to-teal-800 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-bold">Global Traveler Plus</h3>
+            <p class="text-sm text-blue-100">150+ countries • Plus</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5">
+          <div class="flex justify-between items-center mb-3">
+            <div class="text-sm text-gray-600">Coverage</div>
+            <div
+              class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-semibold"
+            >
+              150+ Countries
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <div>
+              <div class="font-medium text-gray-900">50GB Data</div>
+              <div class="text-gray-500">60 Days</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-lg text-blue-600">$179.99</div>
+              <div class="text-xs text-gray-500">traveler plus</div>
             </div>
           </div>
         </div>
@@ -748,7 +991,7 @@
           destinationCards.forEach((card) => {
             const category = card.getAttribute("data-category");
 
-            if (filter === "all" || filter === category) {
+            if (filter === category) {
               card.classList.remove("hidden");
               card.classList.add("visible");
             } else {
@@ -756,18 +999,38 @@
               card.classList.remove("visible");
             }
           });
+
+          // Update section title based on filter
+          const sectionTitle = document.querySelector("h2 span");
+          if (filter === "local") {
+            sectionTitle.textContent = "eSIM";
+            document.querySelector("h2").innerHTML =
+              'Find Your Perfect <span class="text-blue-800">eSIM</span>';
+          } else if (filter === "regional") {
+            sectionTitle.textContent = "Regional eSIM";
+            document.querySelector("h2").innerHTML =
+              'Find Your Perfect <span class="text-blue-800">Regional eSIM</span>';
+          } else if (filter === "global") {
+            sectionTitle.textContent = "Global eSIM";
+            document.querySelector("h2").innerHTML =
+              'Find Your Perfect <span class="text-blue-800">Global eSIM</span>';
+          }
         });
       });
 
       // Search functionality
       searchInput.addEventListener("input", function () {
         const searchTerm = this.value.toLowerCase();
+        const activeFilter = document
+          .querySelector(".filter-btn.active")
+          .getAttribute("data-filter");
 
         destinationCards.forEach((card) => {
           const title = card.querySelector("h3").textContent.toLowerCase();
           const category = card.getAttribute("data-category");
 
-          if (title.includes(searchTerm)) {
+          // Only show cards that match both search term AND active filter
+          if (title.includes(searchTerm) && category === activeFilter) {
             card.classList.remove("hidden");
             card.classList.add("visible");
           } else {

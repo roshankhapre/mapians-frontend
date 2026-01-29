@@ -1,32 +1,42 @@
-// Component Loader for Tailwind Website
+// Global Component Loader
+
+async function loadComponent(containerId, componentUrl) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  try {
+    const response = await fetch(componentUrl);
+    if (!response.ok) throw new Error(`Failed to load ${componentUrl}`);
+    container.innerHTML = await response.text();
+  } catch (error) {
+    console.error(error);
+    container.innerHTML = `<div class="text-red-500 p-4">Component Load Error</div>`;
+  }
+}
+
+// Auto load only homepage components
 document.addEventListener("DOMContentLoaded", function () {
-  // Components to load
   const components = [
     { id: "navbar-container", file: "components/navbar.html" },
     { id: "hero-container", file: "components/hero.html" },
     { id: "destinations", file: "components/destinations.html" },
     { id: "what-is-esim", file: "components/what-is-esim.html" },
-
     { id: "how-it-works-container", file: "components/how-it-works.html" },
-
     { id: "plans-container", file: "components/plans.html" },
     { id: "achievements", file: "components/achievements.html" },
-    // { id: "connection", file: "components/connection.html" },
     { id: "testimonials-container", file: "components/testimonials.html" },
     { id: "blog", file: "components/blog.html" },
-
     { id: "faq-container", file: "components/faq.html" },
     { id: "footer-container", file: "components/footer.html" },
-   
   ];
 
-  // Load each component
   components.forEach((component) => {
-    loadComponent(component.id, component.file);
+    if (document.getElementById(component.id)) {
+      loadComponent(component.id, component.file);
+    }
   });
 
-  // Initialize after components are loaded
-  setTimeout(initializeWebsite, 500);
+  setTimeout(initializeWebsite, 400);
 });
 
 // Function to load components

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Mapians</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- About Section -->
+    <div id="about-mapians"></div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      loadComponent("navbar-container", "components/navbar.html");
+      loadComponent("about-mapians", "components/aboutus.html");
+      loadComponent("footer-container", "components/footer.html");
+    </script>
+  </body>
+</html>

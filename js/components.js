@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     { id: "faq-container", file: "components/faq.html" },
     { id: "footer-container", file: "components/footer.html" },
+   
   ];
 
   // Load each component

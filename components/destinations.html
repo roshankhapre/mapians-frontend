@@ -39,35 +39,153 @@
   </svg>
   <div class="relative max-w-7xl mx-auto px-6">
     <!-- Section Header -->
-    <div class="text-center mb-16">
+    <div class="text-center mb-12">
       <div class="inline-flex items-center mb-6">
         <div
           class="flex items-center space-x-2 bg-white/80 backdrop-blur-md rounded-full px-5 py-2.5 border border-blue-100 shadow-sm"
         >
           <div class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
           <span class="text-sm font-semibold text-gray-700"
-            >🌍 190+ Countries</span
+            >Trusted by 2,00,000+ users</span
           >
         </div>
       </div>
 
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-        Global
-        <span class="text-blue-800">Destinations</span>
+        Find Your Perfect
+        <span class="text-blue-800">eSIM</span>
       </h2>
       <p
-        class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+        class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8"
       >
-        Stay connected in every corner of the world. Instant activation, fast
-        speeds, and no roaming fees.
+        Stay connected, wherever you travel, at affordable rates.
       </p>
+
+      <!-- Search Bar -->
+      <div class="max-w-2xl mx-auto mb-12">
+        <div class="relative">
+          <div
+            class="relative flex items-center bg-white rounded-xl shadow-lg border border-gray-100 p-2"
+          >
+            <div class="flex-1 flex items-center px-4">
+              <svg
+                class="w-5 h-5 text-gray-400 mr-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="Search any destination"
+                class="w-full py-3 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-base font-medium"
+              />
+            </div>
+            <button
+              class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 text-white shadow-sm hover:shadow-md hover:scale-105"
+            >
+              Search
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button
+        data-filter="local"
+        class="filter-btn active px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+          ></path>
+        </svg>
+        Local eSIMs
+      </button>
+      <button
+        data-filter="regional"
+        class="filter-btn px-6 py-3 bg-white text-gray-700 font-semibold rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 shadow-md flex items-center gap-2"
+      >
+        <svg
+          class="w-5 h-5 text-blue-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        Regional eSIMs
+      </button>
+      <button
+        data-filter="global"
+        class="filter-btn px-6 py-3 bg-white text-gray-700 font-semibold rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 shadow-md flex items-center gap-2"
+      >
+        <svg
+          class="w-5 h-5 text-blue-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        Global eSIMs
+      </button>
     </div>
 
     <!-- Countries Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-      <!-- USA -->
+    <div
+      id="destinations-grid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
+    >
+      <!-- USA - Local -->
       <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2"
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2"
+        data-category="local"
       >
         <div class="relative h-48 overflow-hidden">
           <img
@@ -111,9 +229,10 @@
         </div>
       </div>
 
-      <!-- Japan -->
+      <!-- Japan - Local -->
       <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+        data-category="local"
       >
         <div class="relative h-48 overflow-hidden">
           <img
@@ -159,156 +278,10 @@
         </div>
       </div>
 
-      <!-- France -->
+      <!-- Thailand - Local -->
       <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
-      >
-        <div class="relative h-48 overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-            alt="Paris, France"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-          ></div>
-          <div class="absolute top-4 left-4">
-            <img
-              src="https://flagcdn.com/w40/fr.png"
-              alt="France Flag"
-              class="w-10 h-10 rounded-full shadow-lg border-2 border-white"
-            />
-          </div>
-          <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">France</h3>
-            <p class="text-sm text-blue-100">From $3.99/week</p>
-          </div>
-        </div>
-
-        <div class="bg-white p-5">
-          <div class="flex justify-between items-center mb-3">
-            <div class="text-sm text-gray-600">Coverage</div>
-            <div
-              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold"
-            >
-              5G/LTE
-            </div>
-          </div>
-          <div class="flex justify-between items-center text-sm">
-            <div>
-              <div class="font-medium text-gray-900">5GB Data</div>
-              <div class="text-gray-500">7 Days</div>
-            </div>
-            <div class="text-right">
-              <div class="font-bold text-lg text-blue-600">$15.99</div>
-              <div class="text-xs text-gray-500">per month</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- UAE -->
-      <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
-      >
-        <div class="relative h-48 overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-            alt="Dubai, UAE"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-          ></div>
-          <div class="absolute top-4 left-4">
-            <img
-              src="https://flagcdn.com/w40/ae.png"
-              alt="UAE Flag"
-              class="w-10 h-10 rounded-full shadow-lg border-2 border-white"
-            />
-          </div>
-          <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">United Arab Emirates</h3>
-            <p class="text-sm text-blue-100">From $5.99/week</p>
-          </div>
-        </div>
-
-        <div class="bg-white p-5">
-          <div class="flex justify-between items-center mb-3">
-            <div class="text-sm text-gray-600">Coverage</div>
-            <div
-              class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold"
-            >
-              Premium 5G
-            </div>
-          </div>
-          <div class="flex justify-between items-center text-sm">
-            <div>
-              <div class="font-medium text-gray-900">12GB Data</div>
-              <div class="text-gray-500">30 Days</div>
-            </div>
-            <div class="text-right">
-              <div class="font-bold text-lg text-blue-600">$29.99</div>
-              <div class="text-xs text-gray-500">per month</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Second Row -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-      <!-- Australia -->
-      <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
-      >
-        <div class="relative h-48 overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-            alt="Sydney, Australia"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-          ></div>
-          <div class="absolute top-4 left-4">
-            <img
-              src="https://flagcdn.com/w40/au.png"
-              alt="Australia Flag"
-              class="w-10 h-10 rounded-full shadow-lg border-2 border-white"
-            />
-          </div>
-          <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">Australia</h3>
-            <p class="text-sm text-blue-100">From $5.99/week</p>
-          </div>
-        </div>
-
-        <div class="bg-white p-5">
-          <div class="flex justify-between items-center mb-3">
-            <div class="text-sm text-gray-600">Coverage</div>
-            <div
-              class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold"
-            >
-              5G Nationwide
-            </div>
-          </div>
-          <div class="flex justify-between items-center text-sm">
-            <div>
-              <div class="font-medium text-gray-900">15GB Data</div>
-              <div class="text-gray-500">30 Days</div>
-            </div>
-            <div class="text-right">
-              <div class="font-bold text-lg text-blue-600">$32.99</div>
-              <div class="text-xs text-gray-500">per month</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Thailand -->
-      <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="local"
       >
         <div class="relative h-48 overflow-hidden">
           <img
@@ -354,30 +327,99 @@
         </div>
       </div>
 
-      <!-- Singapore -->
+      <!-- Europe Regional - Regional -->
       <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="regional"
       >
         <div class="relative h-48 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=800&q=80"
-            alt="Singapore skyline"
+            src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            alt="Europe"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
-
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
           ></div>
           <div class="absolute top-4 left-4">
-            <img
-              src="https://flagcdn.com/w40/sg.png"
-              alt="Singapore Flag"
-              class="w-10 h-10 rounded-full shadow-lg border-2 border-white"
-            />
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
           </div>
           <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">Singapore</h3>
-            <p class="text-sm text-blue-100">From $4.99/week</p>
+            <h3 class="text-xl font-bold">Europe</h3>
+            <p class="text-sm text-blue-100">26 countries • From $29.99</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5">
+          <div class="flex justify-between items-center mb-3">
+            <div class="text-sm text-gray-600">Coverage</div>
+            <div
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold"
+            >
+              26 Countries
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <div>
+              <div class="font-medium text-gray-900">Unlimited Data</div>
+              <div class="text-gray-500">30 Days</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-lg text-blue-600">$49.99</div>
+              <div class="text-xs text-gray-500">regional plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Asia Pacific - Regional -->
+      <div
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="regional"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=800&q=80"
+            alt="Asia Pacific"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+          ></div>
+          <div class="absolute top-4 left-4">
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-green-600 to-green-800 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-bold">Asia Pacific</h3>
+            <p class="text-sm text-blue-100">15 countries • From $19.99</p>
           </div>
         </div>
 
@@ -387,45 +429,56 @@
             <div
               class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-xs font-semibold"
             >
-              Ultra-Fast 5G
+              15 Countries
             </div>
           </div>
           <div class="flex justify-between items-center text-sm">
             <div>
-              <div class="font-medium text-gray-900">8GB Data</div>
-              <div class="text-gray-500">14 Days</div>
+              <div class="font-medium text-gray-900">20GB Data</div>
+              <div class="text-gray-500">30 Days</div>
             </div>
             <div class="text-right">
-              <div class="font-bold text-lg text-blue-600">$19.99</div>
-              <div class="text-xs text-gray-500">per month</div>
+              <div class="font-bold text-lg text-blue-600">$39.99</div>
+              <div class="text-xs text-gray-500">regional plan</div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Germany -->
+      <!-- Middle East - Regional -->
       <div
-        class="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="regional"
       >
         <div class="relative h-48 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-            alt="Berlin, Germany"
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            alt="Middle East"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
           ></div>
           <div class="absolute top-4 left-4">
-            <img
-              src="https://flagcdn.com/w40/de.png"
-              alt="Germany Flag"
-              class="w-10 h-10 rounded-full shadow-lg border-2 border-white"
-            />
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-yellow-600 to-yellow-800 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
           </div>
           <div class="absolute bottom-4 left-4 text-white">
-            <h3 class="text-xl font-bold">Germany</h3>
-            <p class="text-sm text-blue-100">From $3.99/week</p>
+            <h3 class="text-xl font-bold">Middle East</h3>
+            <p class="text-sm text-blue-100">12 countries • From $25.99</p>
           </div>
         </div>
 
@@ -433,19 +486,138 @@
           <div class="flex justify-between items-center mb-3">
             <div class="text-sm text-gray-600">Coverage</div>
             <div
-              class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-semibold"
+              class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold"
             >
-              5G Available
+              12 Countries
             </div>
           </div>
           <div class="flex justify-between items-center text-sm">
             <div>
-              <div class="font-medium text-gray-900">7GB Data</div>
-              <div class="text-gray-500">21 Days</div>
+              <div class="font-medium text-gray-900">15GB Data</div>
+              <div class="text-gray-500">30 Days</div>
             </div>
             <div class="text-right">
-              <div class="font-bold text-lg text-blue-600">$18.99</div>
-              <div class="text-xs text-gray-500">per month</div>
+              <div class="font-bold text-lg text-blue-600">$34.99</div>
+              <div class="text-xs text-gray-500">regional plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Global 80+ - Global -->
+      <div
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="global"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            alt="Global Coverage"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+          ></div>
+          <div class="absolute top-4 left-4">
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-purple-600 to-purple-800 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-bold">Global 80+</h3>
+            <p class="text-sm text-blue-100">80+ countries • Unlimited</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5">
+          <div class="flex justify-between items-center mb-3">
+            <div class="text-sm text-gray-600">Coverage</div>
+            <div
+              class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold"
+            >
+              80+ Countries
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <div>
+              <div class="font-medium text-gray-900">Unlimited Data</div>
+              <div class="text-gray-500">30 Days</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-lg text-blue-600">$89.99</div>
+              <div class="text-xs text-gray-500">global plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Global 190+ - Global -->
+      <div
+        class="destination-card group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-4xl transition-all duration-500 hover:-translate-y-2"
+        data-category="global"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+            alt="Worldwide Coverage"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+          ></div>
+          <div class="absolute top-4 left-4">
+            <div
+              class="w-10 h-10 bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-full shadow-lg border-2 border-white flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 00.555.894l2.828 1.414a1 1 0 001.11-1.664l-2.828-1.414a1 1 0 00-.444-.224V8c0-.128.073-.243.185-.296z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-bold">Global 190+</h3>
+            <p class="text-sm text-blue-100">190+ countries • Premium</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5">
+          <div class="flex justify-between items-center mb-3">
+            <div class="text-sm text-gray-600">Coverage</div>
+            <div
+              class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs font-semibold"
+            >
+              190+ Countries
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <div>
+              <div class="font-medium text-gray-900">Unlimited Data</div>
+              <div class="text-gray-500">30 Days</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-lg text-blue-600">$129.99</div>
+              <div class="text-xs text-gray-500">premium global</div>
             </div>
           </div>
         </div>
@@ -462,8 +634,8 @@
           <div class="text-sm text-gray-600">Countries Covered</div>
         </div>
         <div>
-          <div class="text-3xl font-bold text-gray-900 mb-2">50K+</div>
-          <div class="text-sm text-gray-600">Happy Travelers</div>
+          <div class="text-3xl font-bold text-gray-900 mb-2">200K+</div>
+          <div class="text-sm text-gray-600">Happy Users</div>
         </div>
         <div>
           <div class="text-3xl font-bold text-gray-900 mb-2">24/7</div>
@@ -500,4 +672,110 @@
       </div>
     </div>
   </div>
+
+  <style>
+    .filter-btn.active {
+      background: linear-gradient(135deg, #1d4ed8, #3730a3);
+      color: white;
+      box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+    }
+
+    .destination-card {
+      transition: all 0.3s ease;
+    }
+
+    .destination-card.hidden {
+      display: none;
+    }
+
+    .destination-card.visible {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <script>
+    // Filter functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const destinationCards = document.querySelectorAll(".destination-card");
+      const searchInput = document.querySelector(
+        'input[placeholder="Search any destination"]',
+      );
+
+      // Filter by category
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const filter = this.getAttribute("data-filter");
+
+          // Update active button
+          filterButtons.forEach((btn) => {
+            btn.classList.remove("active");
+            btn.classList.add(
+              "bg-white",
+              "text-gray-700",
+              "border",
+              "border-gray-200",
+            );
+            btn.classList.remove(
+              "bg-gradient-to-r",
+              "from-blue-600",
+              "to-blue-700",
+              "text-white",
+            );
+          });
+
+          this.classList.remove(
+            "bg-white",
+            "text-gray-700",
+            "border",
+            "border-gray-200",
+          );
+          this.classList.add("active");
+
+          // Filter cards
+          destinationCards.forEach((card) => {
+            const category = card.getAttribute("data-category");
+
+            if (filter === "all" || filter === category) {
+              card.classList.remove("hidden");
+              card.classList.add("visible");
+            } else {
+              card.classList.add("hidden");
+              card.classList.remove("visible");
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      searchInput.addEventListener("input", function () {
+        const searchTerm = this.value.toLowerCase();
+
+        destinationCards.forEach((card) => {
+          const title = card.querySelector("h3").textContent.toLowerCase();
+          const category = card.getAttribute("data-category");
+
+          if (title.includes(searchTerm)) {
+            card.classList.remove("hidden");
+            card.classList.add("visible");
+          } else {
+            card.classList.add("hidden");
+            card.classList.remove("visible");
+          }
+        });
+      });
+    });
+  </script>
 </section>

@@ -8,16 +8,16 @@
 
 :root {
   /* Color Palette */
-  --primary-blue: #3b82f6;
-  --secondary-blue: #1d4ed8;
-  --light-blue: #dbeafe;
-  --accent-yellow: #fbbf24;
-  --accent-green: #10b981;
-  --accent-purple: #8b5cf6;
-  --dark-gray: #1f2937;
-  --medium-gray: #6b7280;
-  --light-gray: #f3f4f6;
-  --white: #ffffff;
+  --primary-blue: #1e40af;
+  --secondary-blue: #1e40af;
+  --light-blue: #1e40af;
+  --accent-yellow: #1e40af;
+  --accent-green: #1e40af;
+  --accent-purple: #1e40af;
+  --dark-gray: #1e40af;
+  --medium-gray: #1e40af;
+  --light-gray: #1e40af;
+  --white: #1e40af;
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -189,12 +189,8 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--secondary-blue)
-  );
-  color: var(--white);
+  background-color: #1e40af;
+  color: #1e40af;
 }
 
 .btn-primary:hover {
@@ -332,11 +328,5 @@ section {
 
 /* ====== HERO GRADIENTS ====== */
 .hero-gradient {
-  background: linear-gradient(
-    135deg,
-    rgba(207, 233, 251, 1) 0%,
-    rgba(232, 245, 255, 1) 30%,
-    rgba(255, 249, 230, 1) 70%,
-    rgba(240, 255, 250, 1) 100%
-  );
+  background-color: #1e40af;
 }

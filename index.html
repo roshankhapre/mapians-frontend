@@ -88,7 +88,7 @@
       }
 
       .gradient-text {
-        background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4, #10b981);
+        background: #1e40af;
         background-size: 300% 300%;
         animation: gradient 8s ease infinite;
         -webkit-background-clip: text;
@@ -103,17 +103,11 @@
       }
 
       .phone-screen-gradient {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: #1e40af;
       }
 
       .premium-gradient-bg {
-        background: linear-gradient(
-          135deg,
-          rgba(207, 233, 251, 1) 0%,
-          rgba(232, 245, 255, 1) 30%,
-          rgba(255, 249, 230, 1) 70%,
-          rgba(240, 255, 250, 1) 100%
-        );
+        background: #1e40af;
       }
 
       .card-hover {
@@ -164,69 +158,72 @@
     <div id="faq-container"></div>
 
     <!-- Client-Style CTA Section -->
-    <section
-      class="relative overflow-hidden bg-gradient-to-br from-blue-900 via-indigo-900 to-blue-950"
-    >
-      <!-- Ambient Glow -->
-      <div class="absolute inset-0 pointer-events-none">
-        <span
-          class="absolute top-20 left-1/4 w-72 h-72 bg-blue-400/25 rounded-full blur-[140px]"
-        ></span>
-        <span
-          class="absolute bottom-24 right-1/4 w-80 h-80 bg-indigo-400/20 rounded-full blur-[160px]"
-        ></span>
-      </div>
+    <!-- CTA SECTION -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- CTA Card -->
+        <div
+          class="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 px-10 py-16 lg:px-16"
+        >
+          <!-- Soft decorative shapes -->
+          <span
+            class="absolute -top-20 -right-20 w-64 h-64 bg-white/10 rounded-full"
+          ></span>
+          <span
+            class="absolute bottom-10 right-1/3 w-40 h-40 bg-white/10 rounded-full"
+          ></span>
 
-      <div class="relative mx-auto max-w-7xl py-24 px-6 lg:px-8 z-10">
-        <div class="flex flex-col-reverse lg:flex-row items-center gap-16">
-          <!-- Text Content -->
-          <div class="max-w-xl text-center lg:text-left">
-            <h2
-              class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white"
-            >
-              Ready to travel <br />
-              <span class="text-blue-200">without roaming fees?</span>
-            </h2>
-
-            <p class="mt-6 text-lg text-blue-100/90">
-              Join over <strong>1 million travelers</strong> who trust Mapians
-              for fast, secure, and seamless global connectivity wherever they
-              go.
-            </p>
-
-            <!-- CTA Buttons -->
-            <div
-              class="mt-10 flex flex-col sm:flex-row gap-6 justify-center lg:justify-start"
-            >
-              <a
-                href="#plans"
-                class="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-lg font-semibold text-blue-900 shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all"
+          <div class="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
+            <!-- LEFT CONTENT -->
+            <div class="text-center lg:text-left max-w-xl">
+              <h2
+                class="text-4xl sm:text-5xl font-extrabold text-white leading-tight"
               >
-                Get your eSIM now
-              </a>
+                Ready to travel <br />
+                <span class="text-blue-100">without roaming fees?</span>
+              </h2>
 
-              <a
-                href="#how-it-works"
-                class="inline-flex items-center justify-center rounded-lg border border-white/40 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition"
+              <p class="mt-6 text-lg text-blue-50/90">
+                Join over <strong>1 million travelers</strong> who trust
+                <strong>Mapians</strong> for seamless global connectivity
+                wherever their adventures take them.
+              </p>
+
+              <!-- Buttons -->
+              <div
+                class="mt-10 flex flex-col sm:flex-row gap-5 justify-center lg:justify-start"
               >
-                Learn how it works →
-              </a>
+                <a
+                  href="#plans"
+                  class="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-semibold text-blue-700 shadow-lg hover:shadow-2xl hover:scale-[1.05] transition-all"
+                >
+                  Get your eSIM now
+                </a>
+
+                <a
+                  href="#how-it-works"
+                  class="inline-flex items-center justify-center rounded-xl border border-white/40 px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition"
+                >
+                  Learn how it works →
+                </a>
+              </div>
             </div>
-          </div>
 
-          <!-- Visual / GIF -->
-          <div class="relative flex justify-center lg:w-1/2">
-            <div class="w-full max-w-md">
-              <img
-                src="/assets/hero3.webp"
-                alt="Global connectivity with Mapians eSIM"
-                class="w-full object-contain drop-shadow-2xl rounded-xl"
-              />
+            <!-- RIGHT ILLUSTRATION -->
+            <div class="relative flex justify-center lg:justify-end">
+              <div class="w-full max-w-sm">
+                <img
+                  src="/assets/hero3.webp"
+                  alt="Travel freely with Mapians eSIM"
+                  class="w-full object-contain drop-shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- END CTA SECTION -->
 
     <!-- Footer -->
     <div id="footer-container"></div>

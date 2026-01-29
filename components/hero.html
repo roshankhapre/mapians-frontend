@@ -1,65 +1,58 @@
 <!-- Hero Section with Side-by-Side Layout (Enhanced) -->
 <section
-  class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden"
+  class="pt-24 pb-16 md:pt-32 md:pb-24 bg-white relative overflow-hidden"
 >
-  <!-- Floating Background Elements -->
-  <div
-    class="absolute top-0 left-0 w-96 h-96 bg-indigo-300/30 rounded-full blur-3xl animate-float"
-  ></div>
-  <div
-    class="absolute top-20 right-0 w-80 h-80 bg-sky-300/25 rounded-full blur-3xl animate-float-delayed"
-  ></div>
-  <div
-    class="absolute bottom-0 left-1/2 w-72 h-72 bg-violet-300/25 rounded-full blur-3xl animate-float-slow"
-  ></div>
-
   <!-- Decorative Circles -->
   <div
-    class="absolute top-32 left-20 w-32 h-32 border-4 border-blue-200/30 rounded-full"
+    class="absolute top-32 left-20 w-32 h-32 border-4 border-blue-200/30 rounded-full hidden lg:block"
   ></div>
   <div
-    class="absolute top-1/2 right-10 w-40 h-40 border-4 border-purple-200/30 rounded-full"
+    class="absolute top-1/2 right-10 w-40 h-40 border-4 border-purple-200/30 rounded-full hidden lg:block"
   ></div>
   <div
-    class="absolute bottom-20 left-1/4 w-28 h-28 border-4 border-pink-200/30 rounded-full"
+    class="absolute bottom-20 left-1/4 w-28 h-28 border-4 border-pink-200/30 rounded-full hidden lg:block"
   ></div>
 
   <!-- Decorative Lines -->
   <div
-    class="absolute top-0 left-1/3 w-px h-40 bg-gradient-to-b from-transparent via-blue-200 to-transparent"
+    class="absolute top-0 left-1/3 w-px h-40 bg-gradient-to-b from-transparent via-blue-200 to-transparent hidden lg:block"
   ></div>
   <div
-    class="absolute bottom-0 right-1/4 w-px h-32 bg-gradient-to-t from-transparent via-purple-200 to-transparent"
+    class="absolute bottom-0 right-1/4 w-px h-32 bg-gradient-to-t from-transparent via-purple-200 to-transparent hidden lg:block"
   ></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="grid lg:grid-cols-2 gap-12 items-center py-12">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-8 lg:py-12">
       <!-- Left Column - Text -->
-      <div data-aos="fade-right" data-aos-duration="800">
+      <div
+        class="order-2 lg:order-1"
+        data-aos="fade-right"
+        data-aos-duration="800"
+      >
         <div
           class="inline-block mb-4"
           data-aos="fade-right"
           data-aos-delay="100"
         >
           <span
-            class="px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold"
+            class="inline-flex items-center px-4 py-2 bg-blue-800 text-white rounded-full text-sm font-semibold"
           >
-            🌍 190+ Countries Covered
+            <span class="mr-2">🌍</span>
+            190+ Countries Covered
           </span>
         </div>
 
         <h1
-          class="mb-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-6xl leading-tight"
+          class="mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-gray-900 leading-tight"
         >
           Global
-          <span
-            class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-            >eSIM Data Plans</span
-          >
+          <span class="text-blue-800">eSIM Data Plans</span>
           for International Travel
         </h1>
 
-        <p class="mb-8 text-lg text-gray-600 lg:text-xl leading-relaxed">
+        <p
+          class="mb-8 text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed"
+        >
           Stay connected in 190+ countries. No roaming fees. Instant activation
           on iPhone and Android devices.
         </p>
@@ -73,14 +66,14 @@
         >
           <div class="relative group">
             <div
-              class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"
+              class="absolute -inset-1 bg-blue-800 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300 hidden sm:block"
             ></div>
             <div
-              class="relative flex items-center bg-white rounded-2xl shadow-xl p-2 border border-gray-100"
+              class="relative flex flex-col sm:flex-row items-stretch sm:items-center bg-white rounded-2xl shadow-lg sm:shadow-xl p-2 border border-gray-100"
             >
-              <div class="flex-1 flex items-center px-4">
+              <div class="flex-1 flex items-center px-4 py-3 sm:py-4">
                 <svg
-                  class="w-5 h-5 text-gray-400 mr-3"
+                  class="w-5 h-5 text-gray-400 mr-3 flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -102,11 +95,11 @@
                 <input
                   type="text"
                   placeholder="Where are you traveling to?"
-                  class="w-full py-4 bg-transparent text-gray-800 placeholder-gray-400 focus:outline-none text-base"
+                  class="w-full bg-transparent text-gray-800 placeholder-gray-400 focus:outline-none text-base sm:text-lg"
                 />
               </div>
               <button
-                class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 text-white"
+                class="mt-2 sm:mt-0 px-6 sm:px-8 py-3 sm:py-4 text-white bg-blue-800 hover:bg-blue-900 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl active:scale-95 sm:hover:scale-105"
               >
                 <svg
                   class="w-5 h-5"
@@ -120,7 +113,7 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                Search
+                <span class="whitespace-nowrap">Search</span>
               </button>
             </div>
           </div>
@@ -128,14 +121,14 @@
 
         <!-- CTA Buttons -->
         <div
-          class="flex flex-col mb-8 sm:flex-row sm:justify-start sm:space-x-4 space-y-4 sm:space-y-0"
+          class="flex flex-col sm:flex-row mb-8 gap-4"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="300"
         >
           <a
             href="#plans"
-            class="group inline-flex justify-center items-center py-4 px-8 text-base font-semibold text-center text-white rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-300 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            class="group inline-flex justify-center items-center py-3 sm:py-4 px-6 sm:px-8 text-base sm:text-lg font-semibold text-center text-white rounded-xl bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95 sm:hover:scale-105"
           >
             Get Your eSIM
             <svg
@@ -153,10 +146,10 @@
           </a>
           <a
             href="#how-it-works"
-            class="group inline-flex justify-center items-center py-4 px-8 text-base font-semibold text-center text-gray-700 rounded-xl border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 focus:ring-4 focus:ring-gray-200 transition-all duration-300 bg-white shadow-md hover:shadow-lg"
+            class="group inline-flex justify-center items-center py-3 sm:py-4 px-6 sm:px-8 text-base sm:text-lg font-semibold text-center text-gray-700 rounded-xl border-2 border-gray-300 hover:border-blue-800 hover:bg-blue-50 focus:ring-4 focus:ring-gray-200 transition-all duration-300 bg-white shadow-md hover:shadow-lg active:scale-95 sm:hover:scale-105"
           >
             <svg
-              class="mr-2 -ml-1 w-5 h-5 text-blue-600"
+              class="mr-2 -ml-1 w-5 h-5 text-blue-800"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -165,98 +158,195 @@
                 d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
               ></path>
             </svg>
-            How it works
+            <span class="whitespace-nowrap">How it works</span>
           </a>
         </div>
 
         <!-- Trust Indicators -->
         <div
-          class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200"
+          class="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-gray-200"
           data-aos="fade-right"
           data-aos-delay="400"
         >
           <div class="text-center">
-            <div class="text-2xl font-bold text-gray-900 mb-1">190+</div>
-            <div class="text-sm text-gray-600">Countries</div>
+            <div class="text-xl sm:text-2xl font-bold text-gray-900 mb-1">
+              190+
+            </div>
+            <div class="text-xs sm:text-sm text-gray-600">Countries</div>
           </div>
           <div class="text-center">
-            <div class="text-2xl font-bold text-gray-900 mb-1">1M+</div>
-            <div class="text-sm text-gray-600">Happy Users</div>
+            <div class="text-xl sm:text-2xl font-bold text-gray-900 mb-1">
+              1M+
+            </div>
+            <div class="text-xs sm:text-sm text-gray-600">Happy Users</div>
           </div>
           <div class="text-center">
-            <div class="text-2xl font-bold text-gray-900 mb-1">99.9%</div>
-            <div class="text-sm text-gray-600">Success Rate</div>
+            <div class="text-xl sm:text-2xl font-bold text-gray-900 mb-1">
+              99.9%
+            </div>
+            <div class="text-xs sm:text-sm text-gray-600">Success Rate</div>
           </div>
         </div>
       </div>
 
       <!-- Right Column - Banner Image -->
-      <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+      <div
+        class="order-1 lg:order-2 relative w-full"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         <!-- Decorative Elements behind image -->
         <div
-          class="absolute -top-8 -right-8 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl"
+          class="absolute -top-8 -right-8 w-64 h-64 bg-blue-200/30 rounded-full blur-3xl hidden lg:block"
         ></div>
         <div
-          class="absolute -bottom-8 -left-8 w-64 h-64 bg-purple-200/30 rounded-full blur-3xl"
+          class="absolute -bottom-8 -left-8 w-56 h-56 bg-purple-200/30 rounded-full blur-3xl hidden lg:block"
         ></div>
 
         <!-- Image Container with effects -->
-        <div
-          class="relative hero-image-container rounded-3xl overflow-hidden backdrop-blur-sm shadow-2xl"
-        >
-          <!-- Gradient overlay to enhance the image -->
+        <div class="relative w-full">
+          <!-- Main Image Container -->
           <div
-            class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 mix-blend-multiply z-20"
-          ></div>
-          <!-- Subtle vignette effect -->
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10"
-          ></div>
+            class="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg lg:shadow-2xl mx-auto max-w-[500px] lg:max-w-full"
+          >
+            <!-- Client's specified image with proper object-fit -->
+            <img
+              src="/assets/hero-img.jpg"
+              alt="Group of good friends having fun while sitting by the side of the road in an autumn forest"
+              class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover object-center"
+              loading="eager"
+            />
 
-          <!-- Client's specified image -->
-          <img
-            src="/assets/hero-img.jpg"
-            alt="Group of good friends having fun while sitting by the side of the road in an autumn forest"
-            class="relative z-0 w-full h-[500px] object-cover"
-          />
+            <!-- Gradient overlay for better text readability -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent lg:hidden"
+            ></div>
 
-          <!-- Floating eSIM overlay element -->
-          <div class="absolute top-8 right-8 z-30">
-            <div class=" ">
-              <div class="flex items-center gap-3">
+            <!-- Floating eSIM overlay element for mobile -->
+            <div class="absolute top-4 right-4 lg:top-8 lg:right-8 z-10">
+              <div
+                class="flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg"
+              >
                 <div
-                  class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center"
+                  class="w-10 h-10 lg:w-12 lg:h-12 bg-blue-800 rounded-lg lg:rounded-xl flex items-center justify-center"
                 >
-                  <i class="fas fa-wifi text-white text-xl"></i>
+                  <i class="fas fa-wifi text-white text-lg lg:text-xl"></i>
                 </div>
+                <div class="hidden sm:block">
+                  <div class="text-sm font-semibold text-gray-900">
+                    5G Ready
+                  </div>
+                  <div class="text-xs text-gray-600">Global Coverage</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating Badge for mobile/top -->
+            <div
+              class="absolute top-4 left-4 lg:-top-6 lg:-right-6 bg-white rounded-xl lg:rounded-2xl shadow-lg lg:shadow-2xl p-3 lg:p-4 border border-gray-100"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
+              <div class="flex items-center gap-2">
+                <div class="flex">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-xs lg:text-sm text-gray-600 whitespace-nowrap">
+                  Rated 4.9/5
+                </div>
+              </div>
+            </div>
+
+            <!-- Badge for desktop/middle left -->
+            <div
+              class="absolute left-8 top-1/2 transform -translate-y-1/2 hidden lg:flex items-center gap-3 bg-blue-800 text-white rounded-2xl shadow-2xl p-4"
+              data-aos="zoom-in"
+              data-aos-delay="800"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center"
+              >
+                <i class="fas fa-bolt text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-lg">Instant</div>
+                <div class="text-sm opacity-90">Activation</div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Floating Badge - Bottom Left -->
-
-        <!-- Rating Badge - Top Right -->
-        <div
-          class="absolute -top-6 -right-6 bg-white rounded-2xl shadow-2xl p-4 border border-gray-100"
-          data-aos="zoom-in"
-          data-aos-delay="700"
-        >
-          <div class="text-xs text-gray-600">Rated by 10k+ users</div>
-        </div>
-
-        <!-- Additional Badge - Middle Left -->
-        <div
-          class="absolute left-8 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl shadow-2xl p-4"
-          data-aos="zoom-in"
-          data-aos-delay="800"
-        ></div>
       </div>
     </div>
   </div>
 </section>
 
 <style>
+  /* Responsive adjustments for the image */
+  @media (max-width: 1024px) {
+    .hero-image-container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-image-container img {
+      height: 350px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-image-container img {
+      height: 300px !important;
+    }
+  }
+
+  /* Ensure image doesn't overflow its container */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
   /* Animations for floating elements */
   @keyframes float {
     0%,
@@ -307,9 +397,11 @@
       box-shadow 0.5s ease;
   }
 
-  .hero-image-container:hover {
-    transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) scale(1.02);
-    box-shadow: 0 30px 60px rgba(59, 130, 246, 0.25);
+  @media (hover: hover) {
+    .hero-image-container:hover {
+      transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) scale(1.02);
+      box-shadow: 0 30px 60px rgba(59, 130, 246, 0.25);
+    }
   }
 
   /* Image styling */
@@ -317,8 +409,10 @@
     transition: transform 0.8s ease;
   }
 
-  .hero-image-container:hover img {
-    transform: scale(1.05);
+  @media (hover: hover) {
+    .hero-image-container:hover img {
+      transform: scale(1.05);
+    }
   }
 </style>
 
@@ -327,8 +421,8 @@
   document.addEventListener("DOMContentLoaded", function () {
     const heroImageContainer = document.querySelector(".hero-image-container");
 
-    if (heroImageContainer) {
-      // Parallax effect on mouse move
+    if (heroImageContainer && window.matchMedia("(hover: hover)").matches) {
+      // Parallax effect on mouse move - only for desktop
       heroImageContainer.addEventListener("mousemove", (e) => {
         const rect = heroImageContainer.getBoundingClientRect();
         const x = ((e.clientX - rect.left) / rect.width) * 100;
@@ -344,6 +438,25 @@
         heroImageContainer.style.transform =
           "perspective(1000px) rotateY(0) rotateX(0) scale(1)";
       });
+    }
+
+    // Fix for image loading issues
+    const heroImage = document.querySelector(".hero-image-container img");
+    if (heroImage) {
+      // Force image to load
+      heroImage.loading = "eager";
+
+      // Add error handling
+      heroImage.onerror = function () {
+        console.error("Hero image failed to load");
+        // Fallback image or color
+        heroImage.style.backgroundColor = "#1e40af";
+        heroImage.style.display = "flex";
+        heroImage.style.alignItems = "center";
+        heroImage.style.justifyContent = "center";
+        heroImage.innerHTML =
+          '<span class="text-white text-lg">eSIM Global Coverage</span>';
+      };
     }
   });
 </script>
